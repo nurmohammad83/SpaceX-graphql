@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Col, Row, Carousel } from "antd";
 import {
   CalendarOutlined,
@@ -22,7 +21,6 @@ const Hero = () => {
     });
   return (
     <Carousel effect="fade" autoplay style={{ margin: "100px 0",height:"100%" }}>
-      {/* slider-1 */}
       {
         data?.ships?.map((ship:Ship | null)=>(
             <div>
