@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import "./index.css";
 
 const client = new ApolloClient({
-  uri: "https://spacex-production.up.railway.app/",
+  uri: import.meta.env.VITE_GRAPHQL_SERVER_API,
   cache: new InMemoryCache(),
   connectToDevTools:true
 });
