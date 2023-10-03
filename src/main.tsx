@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import "./index.css";
 
 const client = new ApolloClient({
-  uri: import.meta.env.VITE_GRAPHQL_SERVER_API,
+  uri: `${import.meta.env.VITE_GRAPHQL_SERVER_API}/graphql`,
   cache: new InMemoryCache(),
   connectToDevTools:true
 });
